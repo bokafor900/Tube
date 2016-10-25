@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +18,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Get in the way when you want to implent custom views. Set the window yourself manually. Make your code more flexible
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .Horizontal
+        
+        // this gets us the HomeViewController showing a collection view
+        window?.rootViewController = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
+        
+        // Get rid of black line color
+        UINavigationBar.appearance().barTintColor = UIColor.rgb(230, green: 32, blue: 31)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        
+        // White text color
+        application.statusBarStyle = .LightContent
+        
+        let statusBackgroundView = UIView()
+        statusBackgroundView.backgroundColor = UIColor.rgb(194, green: 31, blue: 31)
+        
+        
+        window?.addSubview(statusBackgroundView)
+        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBackgroundView)
+        window?.addConstraintsWithFormat("V:|[v0(20)]|", views: statusBackgroundView)
+        
         return true
     }
 

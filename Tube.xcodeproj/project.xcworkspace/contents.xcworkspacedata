@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tube.xcodeproj">
+      location = "self:/Users/boak/Desktop/AppProject/Tube/Tube.xcodeproj">
    </FileRef>
 </Workspace>
