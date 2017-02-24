@@ -21,6 +21,7 @@
 		C5840C761DB585E2003486FD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5840C751DB585E2003486FD /* FeedCell.swift */; };
 		C5840C7E1DB70FC1003486FD /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5840C7D1DB70FC1003486FD /* TrendingCell.swift */; };
 		C598428C1D8A25C300B93DDD /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598428B1D8A25C300B93DDD /* Video.swift */; };
+		C5A6B3821DC3CC160017B350 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A6B3811DC3CC160017B350 /* AccountCell.swift */; };
 		C5A9D1FA1DB93B8300841481 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D1F91DB93B8300841481 /* VideoLauncher.swift */; };
 		C5AD4DD01DB7270D005F3B52 /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AD4DCF1DB7270D005F3B52 /* SubscriptionCell.swift */; };
 		C5E828401D9F147E000F9C5D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8283F1D9F147E000F9C5D /* APIService.swift */; };
@@ -43,6 +44,7 @@
 		C5840C751DB585E2003486FD /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		C5840C7D1DB70FC1003486FD /* TrendingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
 		C598428B1D8A25C300B93DDD /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		C5A6B3811DC3CC160017B350 /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		C5A9D1F91DB93B8300841481 /* VideoLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		C5AD4DCF1DB7270D005F3B52 /* SubscriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
 		C5E8283F1D9F147E000F9C5D /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C5840C751DB585E2003486FD /* FeedCell.swift */,
 				C5840C7D1DB70FC1003486FD /* TrendingCell.swift */,
 				C5AD4DCF1DB7270D005F3B52 /* SubscriptionCell.swift */,
+				C5A6B3811DC3CC160017B350 /* AccountCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -167,11 +170,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "APEX Dominion Industries";
 				TargetAttributes = {
 					C50599EF1D7E94DA00F31B2E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -216,6 +220,7 @@
 				C50599F61D7E94DA00F31B2E /* HomeController.swift in Sources */,
 				C5A9D1FA1DB93B8300841481 /* VideoLauncher.swift in Sources */,
 				C501681D1D887BEF009BDB7C /* MenuBar.swift in Sources */,
+				C5A6B3821DC3CC160017B350 /* AccountCell.swift in Sources */,
 				C5840C761DB585E2003486FD /* FeedCell.swift in Sources */,
 				C52E31571D8861260066C92B /* VideoCell.swift in Sources */,
 				C5AD4DD01DB7270D005F3B52 /* SubscriptionCell.swift in Sources */,
@@ -264,8 +269,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -309,8 +316,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -329,6 +338,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -341,6 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apex.Tube;
 				PRODUCT_NAME = TheTube;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -352,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apex.Tube;
 				PRODUCT_NAME = TheTube;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
